@@ -1,6 +1,17 @@
 import React, { useMemo, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles, Layers, Gauge, MousePointerClick, CheckCircle2, Play, Code2, Palette, Zap } from "lucide-react";
+import {
+  ArrowRight,
+  Sparkles,
+  Layers,
+  Gauge,
+  MousePointerClick,
+  CheckCircle2,
+  Play,
+  Code2,
+  Palette,
+  Zap,
+} from "lucide-react";
 const Button = ({ children, className = "", variant, ...props }: any) => (
   <button
     className={`px-4 py-2 rounded-xl font-medium transition ${
@@ -114,7 +125,7 @@ const showcases = [
     desc: "Real-time expense tracking dashboard with clean UX and efficient data visualization.",
   },
   {
-    title: "Commerce Platform",
+    title: "E-Commerce Platform for Digital Books",
     label: "E-commerce UI",
     stat: "Live demo",
     filename: "ebookify-store",
@@ -474,37 +485,35 @@ export default function StripeDesignEngineerPortfolioDemo() {
                 transition={{ type: "spring", stiffness: 220, damping: 18 }}
               >
                 <a
-  href={item.link}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="block h-full"
->
-  <Card className="h-full rounded-[2rem] border-white/10 bg-white/5 hover:bg-white/[0.07] transition hover:scale-[1.02]">
-    <CardContent className="p-6">
-      
-      <div className="flex items-center justify-between">
-        <div>
-          <p className="text-xs text-white/40 uppercase tracking-wide">
-            {item.title}
-          </p>
-          <p className="text-sm text-white/50">{item.label}</p>
-        </div>
-        <Zap className="h-4 w-4 text-white/40" />
-      </div>
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block h-full"
+                >
+                  <Card className="h-full rounded-[2rem] border-white/10 bg-white/5 hover:bg-white/[0.07] transition hover:scale-[1.02]">
+                    <CardContent className="p-6">
+                      <div className="flex items-center justify-between">
+                        <div>
+                          <p className="text-xs text-white/40 uppercase tracking-wide">
+                            {item.title}
+                          </p>
+                          <p className="text-sm text-white/50">{item.label}</p>
+                        </div>
+                        <Zap className="h-4 w-4 text-white/40" />
+                      </div>
 
-      <h3 className="mt-5 text-2xl font-semibold">
-        {item.title}
-      </h3>
+                      <h3 className="mt-5 text-2xl font-semibold">
+                        {item.title}
+                      </h3>
 
-      <p className="mt-3 text-white/70">{item.desc}</p>
+                      <p className="mt-3 text-white/70">{item.desc}</p>
 
-      <div className="mt-6 inline-flex rounded-full border border-white/10 bg-black/20 px-3 py-1 text-sm text-white/85">
-        {item.stat} →
-      </div>
-
-    </CardContent>
-  </Card>
-</a>
+                      <div className="mt-6 inline-flex rounded-full border border-white/10 bg-black/20 px-3 py-1 text-sm text-white/85">
+                        {item.stat} →
+                      </div>
+                    </CardContent>
+                  </Card>
+                </a>
               </motion.div>
             ))}
           </motion.div>
