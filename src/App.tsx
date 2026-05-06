@@ -108,14 +108,14 @@ const principles = [
 ];
 
 const showcases = [
-  {
-    title: "Content Discovery Platform",
-    label: "Search-driven UI",
-    stat: "Live demo",
-    filename: "moviemate-app",
-    link: "https://archana-moviemate-reactjs.netlify.app/",
-    desc: "A modern movie discovery platform with filtering, routing, and performance-optimized rendering.",
-  },
+ {
+  title: "Rita AI Voice Receptionist",
+  label: "AI voice assistant",
+  stat: "Live demo",
+  filename: "rita-ai-receptionist",
+  link: "https://rita-splaash-receptionist.netlify.app/",
+  desc: "AI-powered voice receptionist for Splaash Art Studio using Retell AI, React, and Node.js with real-time parent support for class registration, schedules, and pricing.",
+},
   {
     title: "Financial Analytics Dashboard",
     label: "Data dashboard",
@@ -123,6 +123,14 @@ const showcases = [
     filename: "expense-tracker",
     link: "https://ai-expensetracker26.netlify.app/",
     desc: "Real-time expense tracking dashboard with clean UX and efficient data visualization.",
+  },
+  {
+    title: "Content Discovery Platform",
+    label: "Search-driven UI",
+    stat: "Live demo",
+    filename: "moviemate-app",
+    link: "https://archana-moviemate-reactjs.netlify.app/",
+    desc: "A modern movie discovery platform with filtering, routing, and performance-optimized rendering.",
   },
   {
     title: "E-Commerce Platform for Digital Books",
